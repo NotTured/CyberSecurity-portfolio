@@ -1,0 +1,6 @@
+  Gobuster for cracking websites "/page" 
+Example: gobuster dir -u http://example.com -w /path/to/wordlist.txt
+  John the Ripper or gpg2john For cracking down GPG Passphrase Protection
+
+  Nmap can be used to look for open ports on a curtain IP Address
+Example: nmap -Pn -T4 --open -sS -sC -sV --min-rate=1000 --max-retries=3 -p- -oN scanReportForHost2 [Target IP]
