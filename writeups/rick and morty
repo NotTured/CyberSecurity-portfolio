@@ -1,0 +1,20 @@
+Started with nmap scan and found two ports open, 22 and 80
+I decided to check the http website that is open on port 80 and decided to inspect the website
+and found Note to self, remember username! Username: R1ckRul3s
+I decided to do a gobuster scan and found assets, robots, and login.php with a status of 301 and 200, checked robots
+I found "Wubbalubbadubdub" It seems like it is a password for the login page
+So, I checked that after and was able to access the command page!
+After that, I did ls and saw the first ingredient and did less first ingredient
+And I was able to obtain the first flag
+Then I tried to go around the files, but saw it resetting every time
+So I decided to do a reverse shell using https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet, but
+checked if Python is installed or not, using which python and which python3
+and found python3, then I started listening on port 1234 with "nc -nlvp 1234"
+And I managed to access the reverse shell!
+looked around the files for a bit
+and found the second ingredient in home/rick
+After that, I decided to check root
+But I needed to perform privilege escalation to root first
+So I did sudo -l, and it didn't require a password
+and did whoami and found www-data then
+I did sudo bash -i, and I successfully became root and found the last flag in root/3rd.txt
