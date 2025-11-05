@@ -1,5 +1,6 @@
-  Gobuster for cracking websites "/page" 
+  Gobuster for cracking websites "/page" or dirb
 Example: gobuster dir -u http://example.com -w /path/to/wordlist.txt
+Example: dirb http://example.com 
   John the Ripper or gpg2john For cracking down GPG Passphrase Protection
 
   Nmap can be used to look for open ports on a curtain IP Address
