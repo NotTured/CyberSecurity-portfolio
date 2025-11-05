@@ -5,3 +5,6 @@ Example: dirb http://example.com
 
   Nmap can be used to look for open ports on a curtain IP Address
 Example: nmap -Pn -T4 --open -sS -sC -sV --min-rate=1000 --max-retries=3 -p- -oN scanReportForHost2 [Target IP]
+
+  Sherlock can be used for basic osint
+Example: sherlock "name"
